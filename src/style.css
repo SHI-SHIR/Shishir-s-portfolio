@@ -1,0 +1,246 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f9fc;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.navbar h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #61dafb, #282c34);
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background-color: #f7f9fc;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  color: #0f2027;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.projects-section h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #61dafb;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0f2027;
+}
+
+.project-card p {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.project-card a {
+  align-self: flex-start;
+  text-decoration: none;
+  background-color: #61dafb;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #21a1f1;
+}
+
+/* Resume Section */
+.resume-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #0f2027;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.resume-section h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #0f2027;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.resume-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.resume-content h3 {
+  font-size: 1.75rem;
+  color: #0077b6;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #61dafb;
+  padding-left: 1rem;
+}
+
+.resume-content p, 
+.resume-content ul {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.resume-content ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.download-btn {
+  display: inline-block;
+  margin: 2rem 0 0 0;
+  padding: 12px 25px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #023e8a;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-section h2,
+  .resume-section h2 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
