@@ -18,7 +18,7 @@ function Resume() {
         <p>
           Bachelor in Computer Engineering<br/>
           Gandaki College of Engineering and Science, Pokhara, Lamachaur<br/>
-          2022 – Present (7th Semester) | GPA: 3.74/4.0
+          2022 – Present (7th Semester) 
         </p>
 
         <h3>Skills</h3>
